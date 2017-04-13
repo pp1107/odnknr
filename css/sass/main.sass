@@ -1,0 +1,894 @@
+@import "bourbon/bourbon"
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700')
+
+html
+	overflow-x: hidden
+
+body
+	font-family: "Roboto", sans-serif
+	font-weight: 400
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialised
+	background-color: #ebebeb
+	overflow-x: hidden
+	color: #000
+
+$main-color: #c92127
+
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+select:hover, select:active, select:focus, a:hover, a:active, a:focus, input:hover, input:active, input:focus, button:hover, button:active, button:focus, textarea:hover, textarea:active, textarea:focus
+	outline: none
+ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+	font-size: 0
+.container
+	max-width: 1325px
+	width: 100%
+.top__mnu
+	li
+		display: inline-block
+		margin: 0 23.7px 0 0
+		&:last-child
+			margin: 0
+		a
+			color: #6b6b6b
+			font-size: 14px
+			line-height: 24px
+			transition: all 0.3s ease
+			&:hover
+				color: $main-color
+header
+	background-color: #FFF
+	padding: 0 0 14px
+	.logo
+		display: block
+		margin: 20px 0 0 6px
+	.top__mnu
+		margin: 27px 0 0 44px
+	nav
+		margin: 14px 0 0 41px
+		ul
+			li
+				display: inline-block
+				margin: 0 40.4px 0 0
+				&:last-child
+					margin: 0 0 0 35px
+				a
+					color: #000 !important
+					font-size: 18px
+					line-height: 24px
+					transition: all 0.3s ease
+					&:hover
+						color: $main-color !important
+						text-decoration: underline
+.block__main
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	padding: 140px 0 0px
+	margin: 0 0 0
+	text-align: center
+	span
+		color: #00c6ff
+		font-family: "SkolarPE-Regular"
+		font-size: 18px
+		display: block
+		text-align: center
+		margin: 30px 0 -15px
+	&__link
+		text-align: center
+		display: block
+		color: #fff
+		font-size: 14px
+		line-height: 24px
+		margin: 177px 0 11px
+h1
+	color: #fff
+	font-family: "SkolarPE-Regular"
+	font-size: 72px
+	line-height: 85px
+	text-align: center
+.h1
+	color: #000
+	font-family: "MyriadPro-Regular"
+	font-size: 72px
+h2,.h2
+	color: #000
+	font-family: Roboto
+	font-size: 36px
+	font-weight: 700
+	margin: 0 0 36px
+h3,.h3
+	color: #000
+	font-family: Roboto
+	font-size: 30px
+	font-weight: 700
+.first-block
+	.item-big
+		max-width: 647px !important
+		width: 100% !important
+		height: 708px !important
+		position: relative
+		strong
+			font-size: 36px
+			line-height: 42px
+			margin: 37px 39px 0 39px
+.item
+	max-width: 309px
+	width: 100%
+	height: 342px
+	background-color: #fff
+	box-shadow: -4.3px 2.5px 24px rgba(0, 0, 0, 0.19)
+	display: inline-block
+	vertical-align: top
+	float: left
+	margin: 0 0px 25px
+	position: relative
+	img
+		width: 100%
+	strong
+		display: block
+		color: #010101
+		font-family: "SkolarPE-Regular"
+		font-size: 18px
+		margin: 22px 0 0 17px
+		line-height: 21px
+.btn-main
+	color: $main-color
+	font-size: 16px
+	display: block
+	text-align: center
+	width: 159px
+	height: 44px
+	border: 1px solid $main-color
+	border-radius: 5px
+	margin: 0 auto
+	line-height: 44px
+	transition: all 0.3s ease
+	&:hover
+		background-color: $main-color
+		color: #FFF
+.owl-carousel
+	max-width: 890px
+	width: 100%
+	margin: 0 auto
+
+.social-link
+	a
+		font-size: 28px
+		color: #FFF
+		transition: all .3s ease
+		&:hover
+			color: $main-color
+
+.btn__pdf
+	max-width: 159px
+	width: 100%
+	height: 44px
+	background-color: $main-color
+	border-radius: 5px
+	display: inline-block
+	text-align: center
+	line-height: 44px
+	color: #fff
+	font-size: 16px
+	background-image: url("../img/pdf.png")
+	background-repeat: no-repeat
+	background-position: 15px center
+	transition: all 0.3s ease
+	padding: 0 0 0 36px
+	&:hover
+		background-color: #f8070f
+.btn__ply
+	max-width: 148px
+	width: 100%
+	height: 44px
+	background-color: $main-color
+	border-radius: 5px
+	display: inline-block
+	text-align: center
+	line-height: 44px
+	color: #fff
+	font-size: 16px
+	background-image: url("../img/ply.png")
+	background-repeat: no-repeat
+	background-position: 25px center
+	transition: all 0.3s ease
+	padding: 0 0 0 25px
+	&:hover
+		background-color: #f8070f
+
+.btn__all
+	max-width: 159px
+	width: 100%
+	height: 44px
+	background-color: #595959
+	border-radius: 5px
+	display: inline-block
+	text-align: center
+	line-height: 44px
+	color: #fff
+	font-size: 16px
+	transition: all 0.3s ease
+	&:hover
+		background-color: darken(#595959,20%)
+.journal
+	.col-md-7
+		padding-left: 36px
+		padding-right: 220px
+	img
+		margin: 40px 0 0
+	.h2
+		margin: 34px 0 52px
+	strong
+		color: #000
+		font-family: Roboto
+		font-size: 24px
+		font-weight: 700
+		margin: 0 0 14px
+		display: block
+	p
+		line-height: 24px
+		color: #000
+		font-family: Roboto
+		font-size: 16px
+		font-weight: 400
+	.btn__pdf
+		margin: 72px 23px 0 0
+.second-block
+	background-color: #FFF
+	margin: 18px 0 60px
+	padding: 63px 0 40px
+	.item
+		background-color: #ebebeb
+		max-width: 300px
+		height: 342px
+	.btn-main
+		margin: 57px auto 143px
+	.owl-carousel
+		margin-bottom: 125px
+.third-block
+	background-color: #FFF
+	margin: 18px 0 0px
+	padding: 63px 0 178px
+	.item
+		background-color: #ebebeb
+		max-width: 300px
+		height: 342px
+	.btn-main
+		margin: 57px auto 143px
+	.owl-carousel
+		margin-bottom: 125px	
+footer
+	background-color: #111
+	margin: 0px 0 0
+	padding: 70px 0 85px
+	.social-link
+		margin: 7px 0 0
+	span
+		display: block
+		color: $main-color
+		font-family: Roboto
+		font-size: 14px
+		font-weight: 700
+		line-height: 24px
+		text-transform: uppercase
+		margin: 0 0 8px
+	ul
+		li
+			a
+				color: #ebebeb
+				font-family: Roboto
+				font-size: 14px
+				font-weight: 400
+				line-height: 28px
+				transition: all 0.3s ease
+				&:hover
+					color: $main-color
+	p
+		color: #b5b5b5
+		font-family: Roboto
+		font-size: 14px
+		font-weight: 700
+		line-height: 24px
+		text-transform: uppercase
+		text-align: center
+		margin: 47px 0 0
+
+.block__inner
+	background-color: $main-color
+	padding: 92px 0 104px
+	p
+		padding: 0 225px 0
+		color: #fff
+		font-family: Roboto
+		font-size: 24px
+		font-weight: 400
+		line-height: 36px
+.journal-block
+	background-color: #FFF
+	padding: 60px 0 105px
+	&:nth-child(odd)
+		background-color: #7d7d7d
+		padding: 60px 0 105px
+		strong
+			color: #FFF
+		p
+			color: #FFF
+		.h2
+			color: #FFF
+	.img-responsive
+		margin-left: auto
+		margin-right: auto
+		display: block
+		box-shadow: -20.8px 12px 32px rgba(0, 0, 0, 0.19)
+	.col-md-6:nth-child(2)
+		padding-left: 30px
+		padding-right: 100px
+.cinema-club
+	padding: 93px 0 0
+	margin: 0 auto
+	background-color: #FFF
+	.container
+		max-width: 1125px
+		width: 100%
+	.sort
+		margin: 0 0 50px
+.cinema-club__item
+	max-width: 195px
+	width: 100%
+	display: inline-block
+	vertical-align: top
+	margin: 0 25px 80px 0px
+	&:nth-child(5n+1)
+		margin-right: 0 !important
+	img
+		margin: 0 auto
+		display: block
+	strong
+		color: #000
+		font-family: Roboto
+		font-size: 24px
+		font-weight: 700
+		line-height: 24px
+		display: block
+		margin: 19px 0 10px
+	span
+		display: block
+		color: #000
+		font-family: Roboto
+		font-size: 14px
+		font-weight: 400
+		line-height: 24px
+
+.sort
+	label
+		color: #000
+		font-size: 14px
+		font-weight: 700
+		text-transform: uppercase
+		display: block
+		margin: 0 0 10px
+	select
+		display: block
+		font-size: 18px
+		color: #030101
+		font-weight: 400
+
+	select
+		display: block
+		max-width: 309px
+		width: 100%
+		height: 52px
+		background-color: #fafafa
+		border: 1px solid #c2c4c6
+		border-radius: 4px
+
+.s-hidden
+	visibility: hidden
+	padding-right: 10px
+
+.select
+	cursor: pointer
+	display: block
+	position: relative
+	max-width: 309px
+	width: 100%
+	min-height: 52px
+	color: #030101
+	font-size: 18px
+.styledSelect
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background-color: #fafafa
+	line-height: 45px
+	padding: 0 14px
+	font-weight: 400
+	background-color: #fafafa
+	border: 1px solid #c2c4c6
+	border-radius: 4px
+	&:after
+		content: ""
+		position: absolute
+		right: 15px
+		top: 20px
+		width: 15px
+		height: 9px
+		display: block
+		background-image: url("../img/strelka.png")
+		background-repeat: no-repeat
+		background-position: center center
+.options
+	display: none
+	position: absolute
+	top: 100%
+	right: 0
+	left: 0
+	z-index: 999
+	margin: 0 0
+	padding: 11px 0
+	list-style: none
+	min-height: 180px
+	background-color: #efefef
+	color: #030101
+	font-size: 18px
+	li
+		margin: 0 0 0px
+		padding: 0px 15px
+		line-height: 45px
+		&:hover
+			background-color: $main-color
+			color: white
+
+.gray
+	background-color: #a1a1a1
+	padding: 100px 0
+.item-implementation
+	max-width: 307px
+	width: 100%
+	margin: 0 0px 85px
+	.author
+		position: absolute
+		bottom: 40%
+		left: 10px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		img
+			width: 37px
+			height: 37px
+			background-color: #b7b7b7
+			border: 2px solid #ebebeb
+			vertical-align: middle
+			border-radius: 50%
+		span
+			color: #fdfafa
+			font-family: "SkolarPE-Regular"
+			font-size: 14px
+			line-height: 18px
+			font-weight: 400
+			width: 100px
+			vertical-align: middle
+			align-items: center
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			margin: 0 0 0 10px
+	.author + img
+		height: 217px
+.item-programs
+	margin: 0 0 50px
+	p
+		color: #000
+		font-family: Roboto
+		font-size: 16px
+		font-weight: 400
+		line-height: 20px
+		max-width: 190px
+
+.programs
+	background-color: #FFF
+	padding: 30px 0 65px
+	.h3
+		margin: 30px 0 65px
+
+.block__contact
+	background: -webkit-linear-gradient(right, transparent 50%, rgba(201,33,39,.9) 50%)
+	background: -o-linear-gradient(right, transparent 50%, rgba(201,33,39,.9) 50%)
+	background: linear-gradient(to left, transparent 50%, rgba(201,33,39,.9) 50%)
+	padding: 0px 0 0px
+	position: relative
+	.map
+		position: relative
+		z-index: -1
+	.container
+		position: absolute
+		left: 0
+		top: 0
+		align-items: center
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		bottom: 0
+		z-index: 99999
+	table
+		margin: 50px 0 0
+		td:first-child
+			color: #fff
+			font-family: Roboto
+			font-size: 18px
+			font-weight: 700
+			vertical-align: top
+			line-height: 20px
+			padding: 0 0 44px
+		td:last-child
+			color: #fff
+			font-family: Roboto
+			font-size: 18px
+			font-weight: 400
+			line-height: 20px
+			vertical-align: top
+			padding: 0 0 44px 35px
+.container-contact
+	padding: 140px 0 105px
+	background-color: #FFF
+.item-author
+	> strong
+		color: #000
+		font-family: Roboto
+		font-size: 20px
+		font-weight: 700
+		line-height: 36px
+		display: block
+		margin: 0 0 17px
+	img
+		min-width: 83px
+		height: 82px
+		border-radius: 50%
+		max-width: 100%
+		margin: 0 auto
+		display: block
+		
+	span
+		color: #949494
+		font-family: Roboto
+		font-size: 14px
+		line-height: 16px
+		font-weight: 400
+		max-width: 250px
+		display: block
+		
+	&-name
+		color: #000
+		font-size: 24px
+		line-height: 24px
+		font-family: "SkolarPE-Regular"
+		margin: 0 0 4px
+	&-information
+		color: #000
+		font-family: Roboto
+		font-size: 16px
+		font-weight: 400
+		line-height: 26px
+		margin-top: 20px
+		.col-xs-3
+			text-align: right
+
+.container-socials
+	background-color: #FFF
+	padding: 0 0 180px
+	strong
+		color: #000
+		font-family: Roboto
+		font-size: 20px
+		font-weight: 700
+		line-height: 24px
+		display: block
+		margin: 20px 0 0 30px
+	span
+		color: #949494
+		font-family: Roboto
+		font-size: 14px
+		font-weight: 400
+		display: block
+		margin: 0 0 0 30px
+	.col-md-12
+		strong
+			color: #000
+			font-family: Roboto
+			font-size: 20px
+			font-weight: 700
+			line-height: 36px
+			display: block
+			margin: 0 0 20px
+
+.peoples
+	color: #000
+	font-family: Roboto
+	font-size: 18px
+	font-weight: 400
+	line-height: 48px
+	display: block
+	background-repeat: no-repeat
+	background-position: left center
+	padding: 0 0 0 57px
+	margin: 0 0 50px 25px
+.container-peoples
+	background-color: #FFF
+	padding: 105px 0
+	ul
+		margin: 15px 0 0
+		li
+			font-family: Roboto
+			font-size: 18px
+			line-height: 20px
+			color: #c92127
+			font-weight: 700
+			vertical-align: top
+			display: inline-block
+			width: 20%
+			a
+				font-family: Roboto
+				font-size: 18px
+				color: #000
+				font-weight: 400
+				&:hover
+					text-decoration: underline
+
+.about-author
+	max-width: 451px
+	width: 100%
+	background-color: #f1f1f1
+	float: right
+	margin: 170px 0 0
+	padding: 48px 30px
+	.col-xs-3
+		color: $main-color
+	.btn-main
+		float: left
+		margin: 50px 0 20px
+.item-author
+	margin: 0 0 50px
+.container-about
+	background-color: #FFF
+	padding: 0px 0 150px
+	.item-author
+		margin-top: 0
+		margin-bottom: 65px
+	.col-xs-3
+		color: $main-color
+	.h2
+		margin-top: 85px 
+	p
+		color: #000
+		font-family: Roboto
+		font-size: 16px
+		font-weight: 400
+		line-height: 24px
+		max-width: 650px
+		width: 100%
+	table
+		margin: -12px 0 157px
+		thead
+			tr
+				height: 50px
+		th
+			color: #000
+			font-family: Roboto
+			font-size: 16px
+			font-weight: 700
+			line-height: 16px
+		th:nth-child(1)
+			padding: 0 0 0 30px
+		td
+			color: #000
+			font-family: Roboto
+			font-size: 16px
+			font-weight: 400
+			line-height: 24px
+		tbody
+			tr
+				height: 78px
+			tr:nth-child(odd)
+				background-color: #f7e9ea
+			td:first-child
+				padding: 0 0 0 30px
+				width: 480px
+			td:nth-child(2)
+				width: 115px
+			td:nth-child(3)
+				width: 115px
+			td:nth-child(4)
+				width: 225px
+			td:nth-child(5)
+				width: 225px
+.container-event
+	background-color: #FFF
+	&-inner
+		margin: 75px 0 0
+		> strong
+			display: block
+			color: $main-color
+			font-family: Roboto
+			font-size: 24px
+			font-weight: 700
+			margin: 0 0 10px
+		p
+			color: #000
+			font-family: Roboto
+			font-size: 18px
+			font-weight: 400
+			line-height: 20px
+			margin-bottom: 25px
+			strong
+				font-weight: 700
+				font-family: Roboto
+.block-event
+	max-width: 242px
+	float: right
+	margin: 75px 0 0
+	&-link
+		color: #7d7d7d
+		font-family: Roboto
+		font-size: 14px
+		font-weight: 700
+		line-height: 24px
+		display: block
+		
+	strong
+		display: block
+		font-family: Roboto
+		color: #000
+		font-size: 24px
+		font-weight: 700
+		margin: 0 0 16px
+	ul
+		li
+			color: #000
+			font-size: 16px
+			font-weight: 400
+			line-height: 20px
+			font-family: Roboto
+			display: block
+			margin: 0 0 25px
+			&:last-child
+				border-bottom: 1px solid #000
+				padding: 0 0 25px
+			a
+				color: $main-color
+				font-size: 14px
+				font-weight: 400
+				line-height: 24px
+				display: block
+				margin: 5px 0 0
+				&:hover
+					text-decoration: underline
+
+iframe
+	max-width: 650px
+	width: 100%
+	height: 425px
+
+.owl-carousel1
+	max-width: 650px !important
+	width: 100% !important
+	float: left
+	img
+		max-width: 650px !important
+		width: 100% !important
+		height: auto
+		display: block
+	.owl-prev
+		position: absolute
+		left: -60px
+		top: 50%
+		width: 25px
+		height: 55px
+		background-image: url("../img/owl-prev.svg")
+		background-repeat: no-repeat
+		display: block !important
+		font-size: 0
+	.owl-next
+		position: absolute
+		right: -60px
+		top: 50%
+		width: 25px
+		height: 55px
+		background-image: url("../img/owl-next.svg")
+		background-repeat: no-repeat
+		display: block !important
+		font-size: 0
+.owl-carousel1 + p
+	color: #6b6b6b
+	font-family: Roboto
+	font-size: 18px
+	font-weight: 400
+	line-height: 24px
+
+.category
+	padding: 0 27px
+	display: inline-block
+	height: 37px
+	background-color: #f00
+	line-height: 37px
+	color: #fff
+	font-family: Roboto
+	font-size: 18px
+	font-weight: 400
+	text-align: center
+	margin: 0 auto
+
+.container-cinema-club-single
+	padding: 75px 0 50px
+	img
+		display: block
+		margin: 0 auto
+		float: right
+	span
+		color: #a9a8a8
+		font-family: Roboto
+		font-size: 16px
+		font-weight: 400
+		margin: 0 0 40px
+		display: block
+		
+	p
+		color: #000
+		font-family: Roboto
+		font-size: 16px
+		font-weight: 400
+		line-height: 18px
+	.item-programs
+		img
+			float: none
+		p
+			color: #000
+			font-family: Roboto
+			font-size: 14px
+			font-weight: 400
+			line-height: 16px
+			position: relative
+			left: -20px
+.cinema-club-description
+	ul
+		li
+			margin: 0 0 25px
+			strong
+				display: block
+				font-family: Roboto
+				color: $main-color
+				font-size: 12px
+				font-weight: 700
+			span
+				display: block
+				color: #000
+				font-size: 16px
+				font-weight: 400
+				line-height: 16px
+				font-family: Roboto
+				margin: 0 !important
+
+.container-cinema-club-single-text
+	background-color: #FFF
+	padding: 50px 0 100px

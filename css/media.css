@@ -1,0 +1,370 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1325px) {
+	.cinema-club .container {
+		max-width: 100%;
+		width: 100%;
+	}
+	.container-about .col-md-1{
+		display: none;
+	}
+	.item-implementation .author{
+		bottom: 50%;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1200px) {
+	.item-programs img{max-width: 100%;}
+	.cinema-club__item:nth-child(5n+1) {
+		margin-right: 25px !important;
+	}
+	header .container .row > .col-md-1:first-child{
+		display: none;
+	}
+	footer .container .row > .col-md-1:first-child{
+		display: none;
+	}
+	.item strong {
+		margin: 22px 17px 0;
+	}
+	.top__mnu li a {
+		font-size: 13px;
+	}
+	header nav ul li a{
+		font-size: 16px;
+	}
+	.journal .col-md-7 {
+		padding-right: 15px;
+	}
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.item-programs {
+		max-width: 400px;
+	}
+	.block__inner p {
+		padding: 0 0px 0;
+	}
+	.about-author {
+		max-width: 100%;
+		float: none;
+		margin: 40px 0 0;
+	}
+	.container-about p{
+		max-width: 100%;
+	}
+	.top__mnu li a {
+		font-size: 12px;
+	}
+	.top__mnu li {
+		margin: 0 10px 0 0;
+	}
+	header nav {
+		margin: 14px 0 0 25px;
+	}
+	header .top__mnu {
+		margin: 27px 0 0 25px;
+	}
+	header nav ul li {
+		margin: 0 23px 0 0;
+	}
+	.first-block .item-big {
+		max-width: 100% !important;
+	}
+	.first-block .item-big img{
+		width: 100%;
+	}
+	.first-block .item-big strong {
+		margin: 25px 39px 0 39px;
+	}
+	.item{
+		margin: 0 auto 25px;
+		float: none;
+		display: block;
+		max-width: 100% !important;
+	}
+	.item strong {
+		margin: 10px 17px 0;
+	}
+	.journal .col-md-7{
+		padding-left: 15px;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.block__contact .map {
+		z-index: 0;
+	}
+	.block__contact .container{
+		position: relative;
+		display: block;
+		left: auto;
+		right: auto;
+		top: auto;
+		bottom: auto;
+	}
+	.block__contact {
+		background: linear-gradient(to left, transparent 0%, rgba(201,33,39,0.9) 0%);
+	}
+	.container-contact {
+		padding: 30px 0 0;
+	}
+	.container-socials {
+		padding: 0 0 30px;
+	}
+	.container-socials img{
+		margin-bottom: 20px;
+	}
+	.block__contact table {
+		width: 350px;
+	}
+	.gray {
+		padding: 30px 0;
+	}
+	.container-peoples ul li{
+		width: 33%;
+	}
+	.programs {
+		padding: 30px 0;
+	}
+	.block__inner p{
+		font-size: 21px;
+		line-height: 30px;
+	}
+	.block__inner {
+		padding: 30px 0;
+	}
+	.wrapper-table{
+		overflow-x: scroll;
+	}
+	.container-about table tr td {
+		word-break: break-all;
+	}
+	.container-about table {
+		margin: -10px 0 30px;
+		width: 600px;
+	}
+	.container-about table td{
+		width: 100% !important;
+		font-size: 14px;
+		line-height: 16px;
+		text-align: center;
+	}
+	.container-about table tbody td:first-child{
+		padding: 0 0 0 15px;
+	}
+	.container-about table th{
+		font-size: 14px;
+		padding-left: 15px !important;
+	}
+	.container-about .item-author {
+		margin-top: 0px;
+		margin-bottom: 30px;
+	}
+	.container-about {
+		padding: 0px 0 50px;
+	}
+	.container-about .h2 {
+		margin-top: 30px;
+	}
+	.mobile-btn{
+		width: 35px;
+		height: 35px;
+		display: block;
+		background-image: url('../img/menu-icon.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: absolute;
+		top: 25px;
+		right: 15px;
+	}
+	.top__mnu, nav{
+		display: none;
+	}
+	.top__mnu li {
+		display: block;
+		margin: 0 0 10px;
+	}
+	header .top__mnu {
+		margin: 25px 0 0 0px;
+		text-align: center;
+	}
+	header nav ul li {
+		margin: 0 0px 10px 0 !important;
+		display: block;
+	}
+	header nav {
+		text-align: center;
+		margin: 15px 0 0 0px;
+	}
+	h1{
+		font-size: 45px;
+		line-height: 45px;
+	}
+	.block__main{
+		padding: 30px 0 0;
+	}
+	.item{
+		max-width: 310px !important;
+	}
+	.first-block .item-big{
+		height: 347px !important;
+		max-width: 310px !important;
+	}
+	.first-block .item-big strong{
+		font-size: 18px;
+		margin: 10px 17px 0;
+		line-height: 21px;
+	}
+	.third-block .btn-main {
+		margin: 50px auto 50px;
+	}
+	.third-block .owl-carousel {
+		margin-bottom: 50px;
+	}
+	.journal img {
+		margin: 0px auto 0;
+	}
+	.third-block {
+		padding: 30px 0;
+	}
+	footer {
+		padding: 20px 0;
+	}
+	.second-block {
+		margin: 20px 0 20px;
+		padding: 30px 0 30px;
+	}
+	.block__main__link{
+		margin: 50px 0 10px;
+	}
+	.container-peoples {
+		background-color: #FFF;
+		padding: 40px 0;
+	}
+	.journal-block {
+		padding: 30px 0 40px !important;
+	}
+	.journal-block .col-md-6:nth-child(2){
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.container-cinema-club-single {
+    padding: 30px 0;
+}
+		.container-cinema-club-single img{
+		float: none;
+	}
+	.block-event{
+		max-width: 100%;
+		float: none;
+		margin: 30px 0 0;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.container-cinema-club-single .btn__ply, .container-cinema-club-single .item-programs{
+		display: block;
+		margin: 0 auto 20px;
+		float: none;
+	}
+		.container-cinema-club-single img{
+		margin-bottom: 20px;
+	}
+	.block__contact table {
+    width: 280px;
+}
+		.block__contact table{
+		word-break: break-all;
+	}
+	.block__contact table td:first-child{
+		font-size: 16px;
+		width: 70px;
+	}
+	.block__contact table td:last-child {
+    font-size: 16px;
+    padding: 0 0 44px 15px;
+}
+	.container-peoples ul li{
+		width: 50%;
+	}
+	.cinema-club__item:nth-child(5n+1) {
+		margin-right: auto !important;
+	}
+	.cinema-club__item {
+		display: block;
+		margin: 0 auto 30px !important;
+		text-align: center;
+	}
+	.cinema-club{
+		padding: 30px 0 0;
+	}
+	.block__inner p{
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.about-author{
+		padding: 48px 15px;
+	}
+	.btn__pdf, .btn__all{
+		max-width: 138px;
+	}
+	.journal .btn__pdf {
+		margin: 40px 10px 0 0;
+	}
+	.journal .h2 {
+		margin: 30px 0 10px;
+	}
+	.third-block .btn-main {
+		margin: 25px auto;
+	}
+	h1 {
+		font-size: 25px;
+		line-height: 25px;
+	}
+	.owl-carousel .owl-item img{
+		margin: 0 auto;
+	}
+	footer .col-xs-6{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
