@@ -19,7 +19,6 @@ body
 $main-color: #c92127
 
 
-
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
 	color: red
@@ -44,7 +43,7 @@ ul
 			margin: 0
 		a
 			color: #6b6b6b
-			font-size: 14px
+			font-size: 18px
 			line-height: 24px
 			transition: all 0.3s ease
 			&:hover
@@ -65,6 +64,8 @@ header
 				margin: 0 40.4px 0 0
 				&:last-child
 					margin: 0 0 0 35px
+				.active
+					color: $main-color !important
 				a
 					color: #000 !important
 					font-size: 18px
@@ -143,6 +144,7 @@ h3,.h3
 		color: #010101
 		font-family: "SkolarPE-Regular"
 		font-size: 18px
+		font-weight: 300
 		margin: 22px 0 0 17px
 		line-height: 21px
 .btn-main
@@ -170,6 +172,7 @@ h3,.h3
 		font-size: 28px
 		color: #FFF
 		transition: all .3s ease
+		margin: 0 10px
 		&:hover
 			color: $main-color
 
@@ -270,7 +273,7 @@ h3,.h3
 	.btn-main
 		margin: 57px auto 143px
 	.owl-carousel
-		margin-bottom: 125px	
+		margin-bottom: 125px
 footer
 	background-color: #111
 	margin: 0px 0 0
@@ -358,7 +361,7 @@ footer
 		margin: 0 auto
 		display: block
 	strong
-		color: #000
+		color: #6b6b6b
 		font-family: Roboto
 		font-size: 24px
 		font-weight: 700
@@ -367,7 +370,7 @@ footer
 		margin: 19px 0 10px
 	span
 		display: block
-		color: #000
+		color: #6b6b6b
 		font-family: Roboto
 		font-size: 14px
 		font-weight: 400
@@ -462,6 +465,18 @@ footer
 	max-width: 307px
 	width: 100%
 	margin: 0 0px 85px
+	position: relative
+	&:after
+		content: ''
+		left: 0
+		right: 0
+		top: 100px
+		bottom: 0
+		width: 100%
+		height: 117px
+		background: url("../img/item-implementation.png") 50% no-repeat
+		position: absolute
+		background-size: cover
 	.author
 		position: absolute
 		bottom: 40%
@@ -471,6 +486,7 @@ footer
 		display: -ms-flex
 		display: -o-flex
 		display: flex
+		z-index: 2
 		img
 			width: 37px
 			height: 37px
@@ -519,7 +535,9 @@ footer
 	position: relative
 	.map
 		position: relative
-		z-index: -1
+		z-index: 1
+		width: 50%
+		left: 50%
 	.container
 		position: absolute
 		left: 0
@@ -532,6 +550,7 @@ footer
 		display: flex
 		bottom: 0
 		z-index: 99999
+		width: 50%
 	table
 		margin: 50px 0 0
 		td:first-child
@@ -569,7 +588,7 @@ footer
 		max-width: 100%
 		margin: 0 auto
 		display: block
-		
+
 	span
 		color: #949494
 		font-family: Roboto
@@ -578,7 +597,7 @@ footer
 		font-weight: 400
 		max-width: 250px
 		display: block
-		
+
 	&-name
 		color: #000
 		font-size: 24px
@@ -613,7 +632,7 @@ footer
 		font-weight: 400
 		display: block
 		margin: 0 0 0 30px
-	.col-md-12
+	.col-md-11
 		strong
 			color: #000
 			font-family: Roboto
@@ -679,7 +698,7 @@ footer
 	.col-xs-3
 		color: $main-color
 	.h2
-		margin-top: 85px 
+		margin-top: 85px
 	p
 		color: #000
 		font-family: Roboto
@@ -755,7 +774,7 @@ footer
 		font-weight: 700
 		line-height: 24px
 		display: block
-		
+
 	strong
 		display: block
 		font-family: Roboto
@@ -786,7 +805,7 @@ footer
 					text-decoration: underline
 
 iframe
-	max-width: 650px
+	max-width: 100%
 	width: 100%
 	height: 425px
 
@@ -852,7 +871,7 @@ iframe
 		font-weight: 400
 		margin: 0 0 40px
 		display: block
-		
+
 	p
 		color: #000
 		font-family: Roboto

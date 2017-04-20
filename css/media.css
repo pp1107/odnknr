@@ -1,5 +1,10 @@
 /*==========  Desktop First Method  ==========*/
 
+.owl-carousel .owl-item > div {
+  display: flex;
+  align-items: center;
+  height: 206px;
+}
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1325px) {
 	.cinema-club .container {
@@ -20,12 +25,7 @@
 	.cinema-club__item:nth-child(5n+1) {
 		margin-right: 25px !important;
 	}
-	header .container .row > .col-md-1:first-child{
-		display: none;
-	}
-	footer .container .row > .col-md-1:first-child{
-		display: none;
-	}
+
 	.item strong {
 		margin: 22px 17px 0;
 	}
@@ -42,7 +42,12 @@
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	header nav ul li a {
+	    font-size: 14px;
+	}
+	header nav ul li:last-child {
+	    margin: 0 0 0 -3px;
+	}
 	.item-programs {
 		max-width: 400px;
 	}
@@ -99,6 +104,10 @@
 	.block__contact .map {
 		z-index: 0;
 	}
+	.block__contact .map {
+	    width: 100%;
+	    left: 0%;
+	}
 	.block__contact .container{
 		position: relative;
 		display: block;
@@ -106,6 +115,7 @@
 		right: auto;
 		top: auto;
 		bottom: auto;
+		width: 100%;
 	}
 	.block__contact {
 		background: linear-gradient(to left, transparent 0%, rgba(201,33,39,0.9) 0%);
